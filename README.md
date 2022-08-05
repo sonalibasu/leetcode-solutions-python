@@ -5,5 +5,5 @@ Maintaining a repo of all my LeetCode solutions in Python.
 Leetcode problem solutions in python3 + their time and space complexities.
 
 ## theoretical-refresher
-Language - python
+Language - python  
 Description - Contains implementations of DS&A + sample approaches and strategies to tackle problems related ot the topic.
