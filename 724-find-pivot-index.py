@@ -16,6 +16,15 @@ class Solution:
             lhs += value
         return -1
 
+### Alternate Solution (slower)
+
+class Solution:
+    def pivotIndex(self, nums: List[int]) -> int:
+        for i in range(0, len(nums)):
+            if sum(nums[:i]) == sum(nums[i+1:]):
+                return i
+        return -1
+
 ############ Initial brute force ###############
 
 def calculateLHS(vals):

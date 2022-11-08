@@ -1,0 +1,27 @@
+"""
+https://leetcode.com/problems/palindrome-number/
+"""
+## Approach 1
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        # Check edge
+        if x < 0:
+            return False
+        # create the same number, reversed
+        newNum = 0
+        ogNum = x
+        while x > 0:
+            newNum = newNum*10 + x%10
+            x = x//10
+        return ogNum == newNum
+
+# We can further optimize by splitting and comparing 2 halves of the number.
+    
+
+## Default solution. But follow up says do it without converting to string,
+## so follow approach above
+def isPalindrome(self, x: int) -> bool:
+	if x < 0:
+		return False
+	
+	return str(x) == str(x)[::-1]
